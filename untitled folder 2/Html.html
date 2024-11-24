@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A classic Snake game where you collect orbs to grow longer while avoiding walls and yourself">
+    <title> Snakade</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #4299a1; 
+        }
+    </style>
+</head>
+<body>
+    <main class="game-container">
+        <header>
+            <h1>Snakade</h1>
+        </header>
+
+        <section class="game-info">
+            <p>Use the arrow keys to control the snake. Collect the green orbs and avoid crashing into yourself or the walls!</p>
+            <div class="score-container">
+                <p>Current Score: <span id="currentScore">0</span></p>
+                <p>High Score: <span id="highScore">0</span></p>
+            </div>
+        </section>
+
+        <section class="game-controls">
+            <button id="startGame" type="button">Start Game</button>
+            <button id="pauseGame" type="button">Pause</button>
+            <button id="resetGame" type="button">Reset</button>
+        </section>
+
+        <div id="gameArea" aria-label="Snake game area"></div>
+
+        <section class="mobile-controls">
+            <div class="control-buttons">
+                <button id="upBtn" type="button" aria-label="Move Up">↑</button>
+                <button id="leftBtn" type="button" aria-label="Move Left">←</button>
+                <button id="rightBtn" type="button" aria-label="Move Right">→</button>
+                <button id="downBtn" type="button" aria-label="Move Down">↓</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Press 'P' to pause/resume the game</p>
+    </footer>
+
+    <script src="code.js"></script>
+</body>
+</html>
